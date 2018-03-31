@@ -1,5 +1,7 @@
 package com.helloworld;
 
+import java.util.Scanner;
+
 public abstract class TaskRunner {
     ChapterRunner owner;
 
@@ -7,5 +9,5 @@ public abstract class TaskRunner {
         this.owner = owner;
         this.owner.addObject(this);
     }
-    public abstract void run();
+    public abstract void run(Scanner in);
 }

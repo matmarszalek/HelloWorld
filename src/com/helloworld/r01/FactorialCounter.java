@@ -4,13 +4,14 @@ import com.helloworld.ChapterRunner;
 import com.helloworld.TaskRunner;
 
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class FactorialCounter extends TaskRunner {
     public FactorialCounter(ChapterRunner owner) {
         super(owner);
     }
 
-    public void displayFactorialOf(BigInteger n){
+    private void displayFactorialOf(BigInteger n){
 
         BigInteger result = BigInteger.ONE;
 
@@ -22,7 +23,9 @@ public class FactorialCounter extends TaskRunner {
     }
 
     @Override
-    public void run() {
-
+    public void run(Scanner in) {
+        System.out.println("Run: FactorialCounter. Insert a number, for which the factorial will be calculated:");
+        BigInteger num = in.nextBigInteger();
+        this.displayFactorialOf(num);
     }
 }

@@ -9,8 +9,8 @@ public class ChapterRunner {
     public void addObject(TaskRunner obj){
         tasks.add(obj);
     }
-    public void runChapter(){
+    public void runChapter(Scanner in){
         for(TaskRunner task : tasks)
-            task.run();
+            task.run(in);
     }
 }

@@ -2,15 +2,14 @@ package com.helloworld;
 
 import com.helloworld.r01.*;
 
-import java.math.BigInteger;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
+        ChapterOneRunner chap1Runner = new ChapterOneRunner();
+        chap1Runner.runChapter(in);
         /* System.out.println("Hello World");
         PascalTriangle a = new PascalTriangle();
         a.createPascalTriangle(6);

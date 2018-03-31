@@ -3,6 +3,8 @@ package com.helloworld.r01;
 import com.helloworld.ChapterRunner;
 import com.helloworld.TaskRunner;
 
+import java.util.Scanner;
+
 public class BiggestNumberFinder extends TaskRunner {
 
     public BiggestNumberFinder(ChapterRunner owner) {
@@ -21,7 +23,12 @@ public class BiggestNumberFinder extends TaskRunner {
     }
 
     @Override
-    public void run() {
-
+    public void run(Scanner in) {
+        System.out.println("Run: BiggestNumberFinder. Insert three numbers:");
+        int num1 = in.nextInt();
+        int num2 = in.nextInt();
+        int num3 = in.nextInt();
+        this.displayBiggestNumMax(num1, num2, num3);
+        this.displayBiggestNumIf(num1, num2, num3);
     }
 }
