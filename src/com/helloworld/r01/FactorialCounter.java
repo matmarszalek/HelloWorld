@@ -1,17 +1,28 @@
 package com.helloworld.r01;
 
+import com.helloworld.ChapterRunner;
+import com.helloworld.TaskRunner;
+
 import java.math.BigInteger;
 
-public class FactorialCounter {
+public class FactorialCounter extends TaskRunner {
+    public FactorialCounter(ChapterRunner owner) {
+        super(owner);
+    }
+
     public void displayFactorialOf(BigInteger n){
 
         BigInteger result = BigInteger.ONE;
 
-        while(n != BigInteger.ZERO)
-        {
+        while(n != BigInteger.ZERO){
             result = result.multiply(n);
             n = n.subtract(BigInteger.ONE);
         }
         System.out.printf("Factorial is %d", result);
+    }
+
+    @Override
+    public void run() {
+
     }
 }
