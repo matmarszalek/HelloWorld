@@ -1,7 +1,7 @@
 package com.helloworld.r01;
 
-import com.helloworld.ChapterRunner;
-import com.helloworld.TaskRunner;
+import com.helloworld.runners.ChapterRunner;
+import com.helloworld.runners.TaskRunner;
 
 import java.math.BigInteger;
 import java.util.Scanner;

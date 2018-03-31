@@ -1,4 +1,4 @@
-package com.helloworld;
+package com.helloworld.runners;
 
 import java.util.ArrayList;
 import java.util.Scanner;
