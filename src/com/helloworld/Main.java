@@ -2,6 +2,7 @@ package com.helloworld;
 
 import com.helloworld.r01.*;
 
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -13,6 +14,7 @@ public class Main {
         NumberConverter conv = new NumberConverter();
         AngleNormalizer norm = new AngleNormalizer();
         BiggestNumberFinder finder = new BiggestNumberFinder();
+        FactorialCounter facounter = new FactorialCounter();
 
         /* System.out.println("Hello World");
         PascalTriangle a = new PascalTriangle();
@@ -34,6 +36,9 @@ public class Main {
         int num3 = in.nextInt();
         finder.displayBiggestNumIf(num1, num2, num3);
         finder.displayBiggestNumMax(num1, num2, num3);
+
+        BigInteger facNum= in.nextBigInteger();
+        facounter.displayFactorialOf(facNum);
     }
 }
 
