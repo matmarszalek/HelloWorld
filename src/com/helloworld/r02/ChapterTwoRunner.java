@@ -5,6 +5,6 @@ import com.helloworld.runners.ChapterRunner;
 public class ChapterTwoRunner extends ChapterRunner {
 
     public ChapterTwoRunner(){
-
+        new CalendarWriter(this);
     }
 }
