@@ -6,5 +6,6 @@ public class ChapterTwoRunner extends ChapterRunner {
 
     public ChapterTwoRunner(){
         new CalendarWriter(this);
+        new PointManipulator(this);
     }
 }
