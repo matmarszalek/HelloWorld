@@ -14,9 +14,8 @@ public class Company extends TaskRunner{
     public Company(ChapterRunner owner) {
         super(owner);
     }
-
-
-    public BigDecimal average(Measurable[] mes){
+    
+    BigDecimal average(Measurable[] mes){
         int length = mes.length;
         BigDecimal sum = BigDecimal.ZERO;
         for(Measurable m : mes){
@@ -24,6 +23,15 @@ public class Company extends TaskRunner{
         }
         return sum.divide(BigDecimal.valueOf(length));
     }
+    
+    Measurable largest(Measurable[] mes){
+        Employee largest = null;
+        for(Measurable m : mes)
+            if(largest == null || 
+                    m.getMeasure() > largest.getMeasure())
+                largest = (Employee) m;
+        return largest;
+    } 
 
     @Override
     public void run(Scanner in) {
@@ -33,5 +41,7 @@ public class Company extends TaskRunner{
                 new Employee("Lukasz", 4000)
         };
         System.out.println(average(employees));
+        Employee emp = (Employee) largest(employees);
+        System.out.println(emp.getName());
     }
 }
