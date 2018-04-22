@@ -2,6 +2,7 @@ package com.helloworld;
 
 import com.helloworld.r01.*;
 import com.helloworld.r02.ChapterTwoRunner;
+import com.helloworld.r03.ChapterThreeRunner;
 
 import java.util.Scanner;
 
@@ -11,8 +12,10 @@ public class Main {
         Scanner in = new Scanner(System.in);
         //ChapterOneRunner chap1Runner = new ChapterOneRunner();
         //chap1Runner.runChapter(in);
-        ChapterTwoRunner chap2Runner = new ChapterTwoRunner();
-        chap2Runner.runChapter(in);
+        //ChapterTwoRunner chap2Runner = new ChapterTwoRunner();
+        //chap2Runner.runChapter(in);
+        ChapterThreeRunner chap3Runner = new ChapterThreeRunner();
+        chap3Runner.runChapter(in);
         /* System.out.println("Hello World");
         PascalTriangle a = new PascalTriangle();
         a.createPascalTriangle(6);
