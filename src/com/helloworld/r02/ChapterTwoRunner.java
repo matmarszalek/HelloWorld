@@ -1,6 +1,5 @@
 package com.helloworld.r02;
 
-import com.helloworld.r01.Driver;
 import com.helloworld.runners.ChapterRunner;
 
 public class ChapterTwoRunner extends ChapterRunner {

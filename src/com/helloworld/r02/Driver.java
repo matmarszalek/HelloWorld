@@ -1,4 +1,4 @@
-package com.helloworld.r01;
+package com.helloworld.r02;
 
 import com.helloworld.r02.Car;
 import com.helloworld.runners.ChapterRunner;

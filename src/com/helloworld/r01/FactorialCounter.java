@@ -12,7 +12,6 @@ public class FactorialCounter extends TaskRunner {
     }
 
     private void displayFactorialOf(BigInteger n){
-
         BigInteger result = BigInteger.ONE;
 
         while(n != BigInteger.ZERO){
