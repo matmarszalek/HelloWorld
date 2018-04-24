@@ -2,8 +2,6 @@ package com.helloworld.r03;
 
 import com.helloworld.runners.ChapterRunner;
 
-import java.util.Arrays;
-
 public class ChapterThreeRunner extends ChapterRunner {
     public ChapterThreeRunner(){
         new Company(this);
@@ -13,5 +11,16 @@ public class ChapterThreeRunner extends ChapterRunner {
         seq = IntSequence.constant(1);
         for(int i = 0; i < 10; i++)
             System.out.println(seq.next());
+        new GreeterRunner();
+        Runnable[] tasks = {
+                new Greeter("Witaj", 50),
+                new Greeter("Witaj", 50),
+                new Greeter("Witaj", 50),
+                new Greeter("Witaj", 50)
+        };
+        System.out.println("Cw 9 in order");
+        ThreadRunner.runInOrder(tasks);
+        System.out.println("Cw 9 together");
+        ThreadRunner.runTogether(tasks);
     }
 }
