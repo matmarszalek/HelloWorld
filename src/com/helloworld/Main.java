@@ -1,5 +1,6 @@
 package com.helloworld;
 
+import com.helloworld.other.HelloWorldRandomWriter;
 import com.helloworld.r01.*;
 import com.helloworld.r02.ChapterTwoRunner;
 import com.helloworld.r03.ChapterThreeRunner;
@@ -14,8 +15,10 @@ public class Main {
         //chap1Runner.runChapter(in);
         //ChapterTwoRunner chap2Runner = new ChapterTwoRunner();
         //chap2Runner.runChapter(in);
-        ChapterThreeRunner chap3Runner = new ChapterThreeRunner();
-        chap3Runner.runChapter(in);
+        //ChapterThreeRunner chap3Runner = new ChapterThreeRunner();
+        //chap3Runner.runChapter(in);
+        HelloWorldRandomWriter hwrw = new HelloWorldRandomWriter();
+        hwrw.run();
         /* System.out.println("Hello World");
         PascalTriangle a = new PascalTriangle();
         a.createPascalTriangle(6);
