@@ -10,6 +10,12 @@ public class Circle extends Shape {
     }
 
     @Override
+    public Shape clone() {
+        Point pointCloned = new Point(this.point.getX(), this.point.getY());
+        return new Circle(pointCloned, this.radius);
+    }
+
+    @Override
     public Point getCenter() {
         return this.point;
     }

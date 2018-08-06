@@ -12,5 +12,6 @@ public abstract class Shape {
         this.point.y += dy;
     }
 
+    public abstract Shape clone();
     public abstract Point getCenter();
 }

@@ -5,13 +5,14 @@ public class Line extends Shape{
 
     public Line(Point from, Point to) {
         super(from);
-
         this.to = to;
     }
 
     @Override
     public Point getCenter() {
-        return null;
+        double newX = this.to.getX() - this.point.getX();
+        double newY = this.to.getY() - this.point.getY();
+        return new Point(newX, newY);
     }
 
     @Override
@@ -19,5 +20,12 @@ public class Line extends Shape{
         super.moveBy(dx, dy);
         this.to.x += dx;
         this.to.y += dy;
+    }
+
+    @Override
+    public Shape clone() {
+        Point pointCloned = new Point(this.point.getX(), this.point.getY());
+        Point toCloned = new Point(this.to.getX(), this.to.getY());
+        return new Line(pointCloned, toCloned);
     }
 }

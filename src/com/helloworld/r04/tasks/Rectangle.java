@@ -13,6 +13,12 @@ public class Rectangle extends Shape{
     }
 
     @Override
+    public Shape clone() {
+        Point pointCloned = new Point(this.point.getX(), this.point.getY());
+        return new Rectangle(pointCloned, this.width, this.height);
+    }
+
+    @Override
     public Point getCenter() {
         return new Point(this.point.getX() + width/2.0, this.point.getY() - height/2.0);
     }
