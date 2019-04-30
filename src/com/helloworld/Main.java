@@ -16,12 +16,12 @@ public class Main {
         //chap1Runner.runChapter(in);
         //ChapterTwoRunner chap2Runner = new ChapterTwoRunner();
         //chap2Runner.runChapter(in);
-        //ChapterThreeRunner chap3Runner = new ChapterThreeRunner();
-        //chap3Runner.runChapter(in);
+        ChapterThreeRunner chap3Runner = new ChapterThreeRunner();
+        chap3Runner.runChapter(in);
         //HelloWorldRandomWriter hwrw = new HelloWorldRandomWriter();
         //hwrw.run();
-        ChapterFourRunner chap4Runner = new ChapterFourRunner();
-        chap4Runner.runChapter(in);
+        //ChapterFourRunner chap4Runner = new ChapterFourRunner();
+        //chap4Runner.runChapter(in);
         /* System.out.println("Hello World");
         PascalTriangle a = new PascalTriangle();
         a.createPascalTriangle(6);
