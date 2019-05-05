@@ -29,6 +29,7 @@ public class LabelledPoint extends Point{
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        String wholePoint = getLabel() + Double.toString(getX()) + Double.toString(getY());
+        return wholePoint.hashCode();
     }
 }

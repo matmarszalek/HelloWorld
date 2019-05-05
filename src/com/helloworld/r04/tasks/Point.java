@@ -13,8 +13,16 @@ public class Point {
         return x;
     }
 
+    public void setX(double x) {
+        this.x = x;
+    }
+
     public double getY() {
         return y;
+    }
+
+    public void setY(double y) {
+        this.y = y;
     }
 
     @Override
@@ -27,13 +35,14 @@ public class Point {
         if(!super.equals(obj))
             return false;
         Point other = (Point) obj;
-        if(other.getX() != this.getX())
+        if(other.getX() != this.getX() || other.getY() != this.getY())
             return false;
         return true;
     }
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        String wholePoint = Double.toString(getX()) + Double.toString(getY());
+        return wholePoint.hashCode();
     }
 }
