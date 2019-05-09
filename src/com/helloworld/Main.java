@@ -5,6 +5,7 @@ import com.helloworld.r01.*;
 import com.helloworld.r02.ChapterTwoRunner;
 import com.helloworld.r03.ChapterThreeRunner;
 import com.helloworld.r04.ChapterFourRunner;
+import com.helloworld.r05.ChapterFiveRunner;
 
 import java.util.Scanner;
 
@@ -22,6 +23,8 @@ public class Main {
         //hwrw.run();
         //ChapterFourRunner chap4Runner = new ChapterFourRunner();
         //chap4Runner.runChapter(in);
+        ChapterFiveRunner chap5runner = new ChapterFiveRunner();
+        chap5runner.runChapter(in);
         /* System.out.println("Hello World");
         PascalTriangle a = new PascalTriangle();
         a.createPascalTriangle(6);
